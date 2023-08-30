@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f0;
+    color: #ff0066;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 5px solid #ff0066;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#animated-text {
+    font-size: 1.5em;
+    opacity: 0;
+    animation: slideIn 3s forwards 2s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
